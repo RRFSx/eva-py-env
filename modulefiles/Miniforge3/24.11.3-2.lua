@@ -36,7 +36,7 @@ setenv("CONDARC",         pathJoin(base,".condarc"))
 -- Kludge for LMod versions below 8.6
 if (myShellType() == "sh") then
   -- These are conda functions defined in conda.sh
-  local funcs = "conda __conda_activate __conda_hashr __conda_reactivate __add_sys_prefix_to_path"
+  local funcs = "conda __conda_activate __conda_hashr __conda_reactivate" -- __add_sys_prefix_to_path"
 
   -- Line #: What does it do?
   -- 1: source conda.sh from the installation path
